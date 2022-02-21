@@ -4,24 +4,24 @@
 
     function removeDuplicates(arr) {
         let result = [];
-        console.log(arr.sort(function(a, b) { return a - b; }));
+        arr.sort(function(a, b) { return a - b; });
         for (let str of arr) {
           if (!result.includes(str)) {
             result.push(str);
           }
         }
       
-        return console.log(result);
+        return result;
       }
 
-    const resultArray = removeDuplicates([1, 2, 3, 2, 2, 3, 1, 5, 9, 7, 7]); // [1, 2, 3, 5, 7, 9]
+    const resultArray = console.log(removeDuplicates([1, 2, 3, 2, 2, 3, 1, 5, 9, 7, 7])); // [1, 2, 3, 5, 7, 9]
 
 // Функция переворачивания строки
 
     function reverteString(str) {
-        return console.log(str.split('').reverse().join(''))
+        return str.split('').reverse().join('')
     }
-    const revertedStr = reverteString('laptop'); // potpal
+    const revertedStr = console.log(reverteString('laptop')); // potpal
 
 // Создание многомерного массива
 
@@ -39,11 +39,11 @@ function createMatrix(n,m) {
       counter++;
     }
     starCol++
-  } console.log(result)
+  } return result
 } 
 
-  const matrixArr = createMatrix(3, 4);
-  createMatrix(6, 5);
+  const matrixArr = console.log(createMatrix(3, 4));
+  console.log(createMatrix(6, 5));
 
     // 
     //   [1, 2, 3, 4],
